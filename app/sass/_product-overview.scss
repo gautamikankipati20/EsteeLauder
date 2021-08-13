@@ -1,0 +1,112 @@
+@import '_mixins.scss';
+
+.intput-text{
+  pointer-events: none;
+  padding: 9px 16px;
+  color: rgb(0, 0, 0);
+  width: 30%;
+}
+#PLUS{
+  border: 1px solid #040a2b;
+  cursor: pointer;
+  padding: 0px 8px;
+  color: rgb(0, 0, 0);
+  width: 22%;
+}
+#MINUS{
+  margin-left:2rem;
+  border: 1px solid #040a2b;
+  cursor: pointer;
+  padding: 0px 8px;
+  color: rgb(0, 0, 0);
+  width: 22%;
+}
+.elc-button{
+  background: #040a2b;
+  border-radius: unset;
+  font-family: AkzidenzGrotesk;
+  font-size: 12px;
+  font-weight: 700;
+  min-height: 40px;
+  padding: 0;
+  width: 100%;
+  color: white; 
+  width: 12rem; 
+  margin-left: 2rem; 
+}
+.elc-product-overview {
+  width: 40%;
+  @include responsive(phone) {
+    // display: block;
+    float: none;
+    // max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin-top: 98%;
+    // margin-left: 30px;
+    // margin-right: 30px;
+    // background-color: pink;
+    // bottom: 10%%;
+    // display: none;
+    }
+  h4 {
+    font-family: Optima;
+    font-size: 32px;
+    color: #040a2b;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-weight: lighter;
+  }
+
+  // Styles for stars
+  .product-review {
+    //empty stars
+    display: inline-block; 
+    margin-bottom: 10px; 
+
+    .stars-outer {
+      display: inline-block;
+      position: relative;
+      font-family: "Material Icons";
+      letter-spacing: -3px;
+      margin-inline-end: 8px;
+    }
+
+    .stars-outer::before {
+      content: "\f0ec\f0ec\f0ec\f0ec\f0ec";
+      color: #7f7f7f;
+    }
+
+    //filled in stars
+    .stars-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .stars-inner::before {
+      content: "\f0ec\f0ec\f0ec\f0ec\f0ec";
+      color: #000;
+    }
+  }
+  .product-size{
+    .cars{
+      border: 1px solid black; 
+      cursor: pointer; 
+      display: flex; 
+      -webkit-box-align: center; 
+      align-items: center; 
+      padding-left: 8rem; 
+      position: relative; 
+      border-radius: 2rem; 
+    }
+  }
+  
+
+}
+

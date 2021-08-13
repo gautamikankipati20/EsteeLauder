@@ -1,0 +1,19 @@
+@import '_mixins.scss';
+@font-face {
+  font-family: "Akziden";
+  src: url("/fonts/AkzidenzGrotesk-Regular.woff2") format("woff2"),
+  url("/fonts/akzidenzgrotesk-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Akziden";
+  src: url("/fonts/AkzidenzGrotesk-Bold.woff2") format("woff2"),
+  url("/fonts/akzidgrtskproreg-webfont.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Optima";
+  src: url("/fonts/OptimaDisplay-Light.woff2") format("woff2"),
+  url("/fonts/optimadisplay-light-webfont.woff") format("woff");
+}

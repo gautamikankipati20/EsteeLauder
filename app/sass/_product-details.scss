@@ -1,0 +1,70 @@
+@import '_mixins.scss';
+.elc-product-details {
+    @include responsive(phone){
+        position: relative;
+        width: 100%; 
+        margin: -5rem; 
+        display: flex;
+        flex-direction: column;
+
+      
+    }
+    h2 {
+        margin-left:4.5rem;    
+        margin-right:4.5rem;
+        font-family: Optima;
+        font-size: 26px;
+        color: #040a2b;
+        letter-spacing: normal;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        font-weight: lighter;
+    }
+
+.elc-product-details-content{
+    margin-left:4.5rem;    
+    margin-right:4.5rem;
+    width: 35rem; 
+
+}
+
+}
+.elc_how_to_use{
+    h3{
+        margin-left:4.5rem;    
+        margin-right:4.5rem;
+        font-family: Optima;
+        font-size: 26px;
+        color: #040a2b;
+        letter-spacing: normal;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        font-weight: lighter;
+    }
+        
+    .elc-howtouse-content{
+        margin-left:4.5rem;    
+        margin-right:4.5rem;
+        width: 35rem;
+    }
+}
+
+.elc_ingredients{
+    h4{
+        margin-left:4.5rem;    
+        margin-right:4.5rem;
+        font-family: Optima;
+        font-size: 26px;
+        color: #040a2b;
+        letter-spacing: normal;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        font-weight: lighter;
+    }
+
+    .elc_ingredients_content{
+        margin-left:4.5rem;    
+        margin-right:4.5rem;
+        width: 35rem;
+    }
+}

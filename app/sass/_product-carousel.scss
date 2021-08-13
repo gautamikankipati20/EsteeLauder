@@ -1,0 +1,111 @@
+@import '_mixins.scss';
+$thumnail-slider-width: 68px;
+$slider-arrow-width: 22px;
+
+.elc-carousel {
+  
+  width: 57%;
+  display: flex;
+  @include responsive(phone) {
+     background-color: rgb(24, 117, 29);
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    @include responsive(tablet) {
+    // background-color: rgb(24, 117, 29);
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+  h3 {
+    background-color: pink;
+  }
+
+  .slick-arrow {
+    background-image: url('/img/slider-arrow.png');
+    background-size: auto;
+    background-color: transparent;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  .slider-main {
+    width: calc(100% - 68px);
+    flex: 1;
+
+    img {
+      width: 88%;
+    }
+
+    .slick-arrow {
+      top: 50%;
+      width: $slider-arrow-width;
+      height: 39px;
+      transform: translateY(-50%);
+    }
+
+    .slick-prev {
+      left: $slider-arrow-width;
+    }
+
+    .slick-next {
+       margin-left: 10rem;
+       margin-right: 5rem;
+       margin-top: -1.3rem; 
+      right: $slider-arrow-width;
+      transform: scaleX(-1);
+    }
+  }
+
+  .slider-thumbnails {
+    width: $thumnail-slider-width;
+    margin-top: $thumnail-slider-width / 2;
+    @include responsive(phone){
+      display: none; 
+    }
+
+    .slick-slider {
+      width: 100%;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .slick-arrow {
+      height: 68px;
+      width: $slider-arrow-width;
+      left: 0;
+      right: 0;
+    }
+
+    .slick-prev {
+      top: -54px;
+      left: $slider-arrow-width;
+      transform: rotate(90deg);
+    }
+
+    .slick-next {
+      bottom: -54px;
+      left: $slider-arrow-width;
+      transform: rotate(-90deg);
+    }
+  }
+
+}

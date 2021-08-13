@@ -1,0 +1,12 @@
+@import '_mixins.scss';
+.elc-product-attributes {
+
+@include responsive(phone){
+        position: relative;
+        width: 100%; 
+        margin-top: 80%; 
+        margin: -2rem; 
+        display: flex;
+        flex-direction: column;
+    }
+}
